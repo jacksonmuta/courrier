@@ -1,0 +1,7 @@
+{
+  "name": "courrier",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
