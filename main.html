@@ -6,6 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ufanisi Courier Services</title>
     <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
   </head>
   <body>
     <div class="logo">
@@ -86,15 +92,171 @@
         </tr>
       </tbody>
     </table>
-    <table class="tbl-center">
-        <tbody>
+    
+    <div class="center"><tr>
+        <td>WAYBILL/TRACKING NUMBER <br /><input type="text" id="input" /></td><div>
+    <tr><br><br>
+      <table class="tbl-center">
+        
+        <tbody><div>
+            
+            <td>Origin <br /><input type="text" id="input" /></td>
+            <td>Destination <br /><input type="text" id="input" /></td>
+          </tr>
+          <tr>
+            <td>Service Level</td>
+          </tr>
+
+          <td>
+            Same Day Delivery
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                value=""
+                id="flexCheckDefault"
+              />
+            </div>
+          </td>
+          <td></td>
           <tr>
             <td>
-              SENDERS UCSL ACCOUNT NUM.: <br /><input type="text" id="input" />
+              Overnight Delivery
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="flexCheckDefault"
+                />
+              </div>
             </td>
-            <td>
-              SENDERS KRA PIN/ID NUM.: <br /><input type="text" id="input" />
-            </td>
-          </tr>
+            <tr>
+                <td>Shipment Information</td>
+              
+                
+              </tr>
+              <table class="shipment-table">
+                <tr>
+                  <th>NO OF PACKAGES</th>
+                  <th colspan="2">TOTAL ACTUAL WEIGHT</th>
+                  <th colspan="3">DIMENSIONAL WEIGHT</th>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td>Kilos</td>
+                  <td>Grams</td>
+                  <td></td>
+                  <td>Length</td>
+                  <td>WEIGHT</td>
+                  <td>Height</td>
+                </tr>
+                <tr>
+                    <td><input type="text" name="packages"></td><td><input type="text" name="packages"></td>
+                    <td><input type="text" name="actual_kilos"></td>
+                    <td><input type="text" name="actual_grams"></td>
+                    <td><input type="text" name="dimensional_length"></td>
+                    <td><input type="text" name="WEIGHT"></td>
+                    <td><input type="text" name="dimensional_height"></td>
+                  </tr>  <tr>
+                    <td><input type="text" name="packages"></td><td><input type="text" name="packages"></td>
+                    <td><input type="text" name="actual_kilos"></td>
+                    <td><input type="text" name="actual_grams"></td>
+                    <td><input type="text" name="dimensional_length"></td>
+                    <td><input type="text" name="dimensional_width"></td>
+                    <td><input type="text" name="dimensional_height"></td>
+                  </tr>  <tr>
+                    <td><input type="text" name="packages"></td><td><input type="text" name="packages"></td>
+                    <td><input type="text" name="actual_kilos"></td>
+                    <td><input type="text" name="actual_grams"></td>
+                    <td><input type="text" name="dimensional_length"></td>
+                    <td><input type="text" name="dimensional_width"></td>
+                    <td><input type="text" name="dimensional_height"></td>
+                  </tr>  <tr>
+                    <td><input type="text" name="packages"></td><td><input type="text" name="packages"></td>
+                    <td><input type="text" name="actual_kilos"></td>
+                    <td><input type="text" name="actual_grams"></td>
+                    <td><input type="text" name="dimensional_length"></td>
+                    <td><input type="text" name="dimensional_width"></td>
+                    <td><input type="text" name="dimensional_height"></td>
+                  </tr>  <tr>
+                    <td><input type="text" name="packages"></td><td><input type="text" name="packages"></td>
+                    <td><input type="text" name="actual_kilos"></td>
+                    <td><input type="text" name="actual_grams"></td>
+                    <td><input type="text" name="dimensional_length"></td>
+                    <td><input type="text" name="dimensional_width"></td>
+                    <td><input type="text" name="dimensional_height"></td>
+                  </tr>  <tr>
+                    <td><input type="text" name="packages"></td><td><input type="text" name="packages"></td>
+                    <td><input type="text" name="actual_kilos"></td>
+                    <td><input type="text" name="actual_grams"></td>
+                    <td><input type="text" name="dimensional_length"></td>
+                    <td><input type="text" name="dimensional_width"></td>
+                    <td><input type="text" name="dimensional_height"></td>
+                  </tr>
+                <tr>
+                  <td>TOTAL</td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+              </tr></table>
+              <p>DECLARED VALUE FOR CARRIAGE-ADDITIONAL CHARGES APPLIES</p>
+              <table class="shipment-table">
+                <tr>
+                
+                  <td>Currency</td>
+                  <td>Value</td>
+                  <td>Insuarance</td>
+                  <td>Priority</td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                  </tr><tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                  </tr><tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+        </tbody>
+      </table> <tr>
+        <td>PAYMENT OF CHARGES</td>
+      </tr>
+    SHIPPERS UFANISI COURIER SERVICES ACCOUNT<div class="form-check">
+        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+        <label class="form-check-label" for="flexCheckDefault">
+          
+        </label>
+        BILL RECIEVER<div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+            <label class="form-check-label" for="flexCheckDefault">
+              
+            </label>
+         BILL DUTY TAX AND SHIPPING CHARGES TO SHIPPER<div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+            <label class="form-check-label" for="flexCheckDefault">
+              
+            </label>
+   </div></div>
+    
+</div></div></tr></div>
+      <div class="right"><h1>WAYBILL</h1><h2>(Non-Negotiable)</h2></div>
   </body>
 </html>
