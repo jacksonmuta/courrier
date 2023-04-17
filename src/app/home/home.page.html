@@ -1,20 +1,385 @@
-<ion-header [translucent]="true">
+<ion-header>
   <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
+    <ion-title> Shipment Form </ion-title>
   </ion-toolbar>
 </ion-header>
+<ion-content
+  ><app-test></app-test>
+  <ion-grid>
+    <ion-row>
+      <ion-col size="4"
+        ><ion-item>
+          <ion-label>
+            USAGE OF THIS SHIPMENT IS SUBJECT TO
+            <a href="">TERMS AND CONDITIONS</a>
+            <br />
+            ALL ITEMS OF VALUE BEING SHIPPED THROUGH THIS SERVICE ARE ADEQUATELY
+            INSURED
+          </ion-label>
+        </ion-item>
+        <table>
+          <tbody>
+            <tr size="6" class="shipment-table">
+              <td>
+                SENDERS UCSL ACCOUNT NO<ion-input contenteditable></ion-input>
+              </td>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
+              <td>
+                SENDERS KRA PIN/ID NO<ion-input contenteditable></ion-input>
+              </td>
+            </tr>
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
-</ion-content>
+            <tr>
+              <td colspan="2">
+                <h5>COMPANY NAME AND ADDRESS</h5>
+              </td>
+            </tr>
+            <tr>
+              <td><ion-input contenteditable>Name</ion-input></td>
+            </tr>
+            <tr>
+              <td><ion-input contenteditable>Address</ion-input></td>
+            </tr>
+            <tr>
+              <td><ion-input contenteditable>City</ion-input></td>
+            </tr>
+            <tr size="6" class="shipment-table">
+              <td><ion-input contenteditable>POSTAL CODE</ion-input></td>
+              <td><ion-input contenteditable>COUNTRY</ion-input></td>
+            </tr>
+
+            <tr>
+              <td colspan="2">
+                <h5>COMPANY NAME AND ADDRESS</h5>
+              </td>
+            </tr>
+            <tr>
+              <td><ion-input contenteditable>Name</ion-input></td>
+            </tr>
+            <tr>
+              <td><ion-input contenteditable>Address</ion-input></td>
+            </tr>
+            <tr>
+              <td><ion-input contenteditable>City</ion-input></td>
+            </tr>
+            <tr size="6" class="shipment-table">
+              <td><ion-input contenteditable>POSTAL CODE</ion-input></td>
+              <td><ion-input contenteditable>COUNTRY</ion-input></td>
+            </tr>
+
+            <tr>
+              <td colspan="2">
+                <label for="contactPerson">Contact Person:</label>
+                <input type="text" class="form-control" id="contactPerson" />
+
+                <label for="telephoneNo">Telephone No.:</label>
+                <input type="text" class="form-control" id="telephoneNo" />
+
+                <label for="descriptionOfGoods">Description of Goods:</label>
+                <ion-textarea
+                  autoGrow="true"
+                  class="form-control"
+                  id="descriptionOfGoods"
+                  rows="15"
+                />
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </ion-col>
+      <ion-col size="4"
+        ><br /><br /><br /><br /><ion-row>
+          <ion-col>
+            <ion-item>
+              <ion-label>WAYBILL/TRACKING NUMBER</ion-label>
+              <ion-input type="text" name="trackingNumber"></ion-input>
+            </ion-item>
+          </ion-col>
+        </ion-row>
+
+        <table>
+          <tbody>
+            <tr size="6" class="shipment-table">
+              <td>
+                <ion-grid>
+                  <ion-row>
+                    <ion-col size="1">
+                      <div><td>3</td></div></ion-col
+                    >
+                    <ion-col size="10">
+                      <div class="title">Origin</div>
+                      <ion-input contenteditable></ion-input
+                    ></ion-col>
+                  </ion-row>
+                </ion-grid>
+              </td>
+
+              <td>
+                <div class="title">Destination</div>
+                <ion-input contenteditable></ion-input>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+
+        <ion-row>
+          <ion-col>
+            <ion-item>
+              <ion-label><div class="title">Service Level</div></ion-label>
+            </ion-item>
+
+            <ion-item>
+              <ion-radio value="start" labelPlacement="start"
+                >Same Day Delivery</ion-radio
+              >
+            </ion-item>
+            <ion-item>
+              <ion-radio value="start" labelPlacement="start"
+                >Overnight Delivery</ion-radio
+              >
+            </ion-item>
+          </ion-col>
+        </ion-row>
+
+        <ion-row>
+          <ion-col>
+            <ion-item>
+              <ion-label
+                ><div class="title">Shipment Information</div></ion-label
+              >
+            </ion-item>
+          </ion-col>
+        </ion-row>
+
+        <table class="shipment-table">
+          <tr>
+            <td>NO. OF PACKAGES</td>
+            <td colspan="2">TOTAL ACTUAL WEIGHT</td>
+            <td colspan="3">DIMENSIONAL WEIGHT</td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>Kilos</td>
+            <td>Grams</td>
+
+            <td>Length</td>
+            <td>WEIGHT</td>
+            <td>Height</td>
+          </tr>
+          <tr>
+            <td><ion-input contenteditable></ion-input></td>
+            <td><ion-input contenteditable></ion-input></td>
+            <td><ion-input contenteditable></ion-input></td>
+            <td><ion-input contenteditable></ion-input></td>
+            <td><ion-input contenteditable></ion-input></td>
+            <td><ion-input contenteditable></ion-input></td>
+          </tr>
+          <tr>
+            <td><ion-input contenteditable></ion-input></td>
+            <td><ion-input contenteditable></ion-input></td>
+            <td><ion-input contenteditable></ion-input></td>
+            <td><ion-input contenteditable></ion-input></td>
+            <td><ion-input contenteditable></ion-input></td>
+            <td><ion-input contenteditable></ion-input></td>
+          </tr>
+          <tr>
+            <td><ion-input contenteditable></ion-input></td>
+            <td><ion-input contenteditable></ion-input></td>
+            <td><ion-input contenteditable></ion-input></td>
+            <td><ion-input contenteditable></ion-input></td>
+            <td><ion-input contenteditable></ion-input></td>
+            <td><ion-input contenteditable></ion-input></td>
+          </tr>
+          <tr>
+            <td><ion-input contenteditable></ion-input></td>
+            <td><ion-input contenteditable></ion-input></td>
+            <td><ion-input contenteditable></ion-input></td>
+            <td><ion-input contenteditable></ion-input></td>
+            <td><ion-input contenteditable></ion-input></td>
+            <td><ion-input contenteditable></ion-input></td>
+          </tr>
+          <tr>
+            <td><ion-input contenteditable></ion-input></td>
+            <td><ion-input contenteditable></ion-input></td>
+            <td><ion-input contenteditable></ion-input></td>
+            <td><ion-input contenteditable></ion-input></td>
+            <td><ion-input contenteditable></ion-input></td>
+            <td><ion-input contenteditable></ion-input></td>
+          </tr>
+          <tr>
+            <td><ion-input contenteditable></ion-input></td>
+            <td><ion-input contenteditable></ion-input></td>
+            <td><ion-input contenteditable></ion-input></td>
+            <td><ion-input contenteditable></ion-input></td>
+            <td><ion-input contenteditable></ion-input></td>
+            <td><ion-input contenteditable></ion-input></td>
+          </tr>
+          <tr>
+            <td><ion-input contenteditable></ion-input></td>
+            <td><ion-input contenteditable></ion-input></td>
+            <td><ion-input contenteditable></ion-input></td>
+            <td><ion-input contenteditable></ion-input></td>
+            <td><ion-input contenteditable></ion-input></td>
+            <td><ion-input contenteditable></ion-input></td>
+          </tr>
+          <tr>
+            <td><ion-input contenteditable></ion-input>TOTAL</td>
+            <td><ion-input contenteditable></ion-input></td>
+            <td><ion-input contenteditable></ion-input></td>
+            <td><ion-input contenteditable></ion-input></td>
+            <td><ion-input contenteditable></ion-input></td>
+            <td><ion-input contenteditable></ion-input></td>
+          </tr>
+          <tr>
+            <td class="DECLARED">
+              DECLARED VALUE FOR CARRIAGE-ADDITIONAL CHARGES APPLIES
+            </td>
+          </tr>
+          <tr>
+            <td>Currency</td>
+            <td>Value</td>
+            <td>Insurance</td>
+            <td>Priority</td>
+          </tr>
+          <tr>
+            <td><ion-input contenteditable></ion-input></td>
+            <td><ion-input contenteditable></ion-input></td>
+            <td><ion-input contenteditable></ion-input></td>
+            <td><ion-input contenteditable></ion-input></td>
+          </tr>
+          <tr>
+            <td><ion-input contenteditable></ion-input></td>
+            <td><ion-input contenteditable></ion-input></td>
+            <td><ion-input contenteditable></ion-input></td>
+            <td><ion-input contenteditable></ion-input></td>
+          </tr>
+          <tr>
+            <td><ion-input contenteditable></ion-input></td>
+            <td><ion-input contenteditable></ion-input></td>
+            <td><ion-input contenteditable></ion-input></td>
+            <td><ion-input contenteditable></ion-input></td>
+          </tr>
+        </table>
+
+        <ion-label><p class="payment">PAYMENT OF CHARGES</p></ion-label>
+
+        <ion-grid>
+          <ion-row>
+            <ion-col size="4"
+              ><ion-item class="R"
+                >BILL SHIPPERS UFANISI COURIER SERVICES ACCOUNT
+                <ion-radio
+                  value="start"
+                  labelPlacement="start"
+                ></ion-radio> </ion-item
+            ></ion-col>
+            <ion-col size="4">
+              <ion-item class="R"
+                >BILL RECIEVER
+                <ion-radio
+                  value="start"
+                  labelPlacement="start"
+                ></ion-radio> </ion-item
+            ></ion-col>
+            <ion-col size="4">
+              <ion-item class="R"
+                >BILL DUTY TAX AND SHIPPING CHARGES TO SHIPPER
+                <ion-radio
+                  value="start"
+                  labelPlacement="start"
+                ></ion-radio> </ion-item
+            ></ion-col>
+          </ion-row>
+        </ion-grid>
+      </ion-col>
+
+      <ion-col size="4">
+        <div><img src="../../assets/logo.png" alt="" /></div>
+        <div class="address">
+          <p>
+            HEAD OFFICE: Pokomo Rd.off Shimo La Tewa Rd.<br />off Lusaka
+            Rd.Industrial Area <br />
+            P.O Box 43357-00100, Nairobi, Kenya<br />Telephone: +254 756 508
+            560, +254 751 508 560<br />
+            OUR OFFICES: MOMBASA,BUNGOMA, NAKURU, ELDORET<br />
+            KISUMU, KERICHO, KAKAMEGA, MACHAKOS, <br />
+            NYERI, NANYUKI, KILIFI, MALINDI, <br />
+            KITUI, BUSIA, MIGORI, HOMABAY<br />Email:
+            <a href="mailto:enquiries@ufanisicourier.co.ke"
+              >enquiries@ufanisicourier.co.ke</a
+            >
+          </p>
+        </div>
+        <div class="way">
+          <h1>WAYBILL</h1>
+          <h2>(Non-Negotiable)</h2>
+        </div>
+        <table>
+          <tr>
+            <td><div class="title">DELIVERY INFORMATION</div></td>
+          </tr>
+          <tr>
+            <td colspan="2">
+              <span>RECIPIENTS NAME</span><br />
+              <ion-input contenteditable></ion-input>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2">
+              <span>RECIPIENTS SIGNATURE AND ID NO.</span><br />
+              <ion-input contenteditable></ion-input>
+            </td>
+          </tr>
+          <table>
+            <tbody>
+              <tr class="shipment-table">
+                <td size="6">DATE<ion-input contenteditable></ion-input></td>
+
+                <td
+                  size="6
+                "
+                >
+                  TIME<ion-input contenteditable></ion-input>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <tr>
+            <td><div class="title">SPECIAL INSTRUCTIONS</div></td>
+            <td>
+              <ion-input contenteditable></ion-input>
+            </td>
+          </tr>
+          <tr>
+            <td><div class="title">UFANISI COURIER SERVICES USE</div></td>
+          </tr>
+        </table>
+        <table class="shipment-table">
+          <tr>
+            <td>RECEIVED FOR UFANISI COURIER SERVICES BY</td>
+            <td>DATE</td>
+            <td>TIME</td>
+          </tr>
+          <tr>
+            <td><ion-input contenteditable></ion-input></td>
+            <td><ion-input contenteditable></ion-input></td>
+            <td><ion-input contenteditable></ion-input></td>
+          </tr>
+        </table>
+        <tr>
+          <td></td>
+        </tr>
+        <table class="shipment-table">
+          <tr>
+            <td>AMOUNT RECEIVED</td>
+            <td>INVOICE NO.</td>
+            <td>MPESA CODE</td>
+          </tr>
+          <tr>
+            <td><ion-input contenteditable></ion-input></td>
+            <td><ion-input contenteditable></ion-input></td>
+            <td><ion-input contenteditable></ion-input></td>
+          </tr>
+        </table>
+      </ion-col> </ion-row></ion-grid
+></ion-content>

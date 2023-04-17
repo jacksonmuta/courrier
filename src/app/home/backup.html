@@ -1,0 +1,185 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title> Shipment Form </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-item>
+  <ion-label>
+    USAGE OF THIS SHIPMENT IS SUBJECT TO
+    <a href="">TERMS AND CONDITIONS</a>
+    <br />
+    ALL ITEMS OF VALUE BEING SHIPPED THROUGH THIS SERVICE ARE ADEQUATELY INSURED
+  </ion-label>
+</ion-item>
+
+<tr>
+  <td>
+    SENDERS UCSL ACCOUNT NUM.: <br /><ion-input
+      type="text"
+      id="input"
+    ></ion-input>
+  </td>
+  <td>
+    SENDERS KRA PIN/ID NUM.: <br /><ion-input
+      type="text"
+      id="input"
+    ></ion-input>
+  </td>
+</tr>
+<tr>
+  <td colspan="2">
+    <span>COMPANY NAME AND ADDRESS</span>
+    <br />
+    <span>NAME: </span><ion-input type="text" id="input"></ion-input>
+    <br />
+    <span>ADDRESS: </span><ion-input type="text" id="input"></ion-input>
+    <br />
+    <span>CITY: </span><ion-input type="text" id="input"></ion-input>
+  </td>
+</tr>
+<tr>
+  <td colspan="2">
+    <span>POSTAL CODE</span><span>COUNTRY</span><br />
+    <ion-input type="text" id="input"></ion-input
+    ><ion-input type="text" id="input"></ion-input>
+  </td>
+</tr>
+<tr>
+  <td colspan="2">
+    <span>CONTACT PERSON</span><span>TELEPHONE NO.</span><br />
+    <ion-input type="text" id="input"></ion-input
+    ><ion-input type="text" id="input"></ion-input>
+  </td>
+</tr>
+<tr>
+  <td colspan="2">
+    <h3>RECEIVERS DETAILS</h3>
+  </td>
+</tr>
+
+<tr>
+  <td colspan="2">
+    <h5>COMPANY NAME AND ADDRESS</h5>
+
+    <label for="name">Name:</label>
+    <input type="text" class="form-control" id="name" />
+
+    <label for="address">Address:</label>
+    <input type="text" class="form-control" id="address" />
+
+    <label for="city">City:</label>
+    <input type="text" class="form-control" id="city" />
+  </td>
+</tr>
+<tr>
+  <td colspan="2">
+    <label for="postalCode">Postal Code:</label>
+    <input type="text" class="form-control" id="postalCode" />
+
+    <label for="country">Country:</label>
+    <input type="text" class="form-control" id="country" />
+  </td>
+</tr>
+<tr>
+  <td colspan="2">
+    <label for="contactPerson">Contact Person:</label>
+    <input type="text" class="form-control" id="contactPerson" />
+
+    <label for="telephoneNo">Telephone No.:</label>
+    <input type="text" class="form-control" id="telephoneNo" />
+
+    <label for="descriptionOfGoods">Description of Goods:</label>
+    <input type="text" class="form-control" id="descriptionOfGoods" />
+  </td>
+</tr>
+<ion-row>
+  <ion-col>
+    <ion-item>
+      <ion-label>WAYBILL/TRACKING NUMBER</ion-label>
+      <ion-input type="text" name="trackingNumber"></ion-input>
+    </ion-item>
+  </ion-col>
+</ion-row>
+
+<ion-row>
+  <ion-col>
+    <ion-item>
+      <ion-label>Origin</ion-label>
+      <ion-input type="text" name="origin"></ion-input>
+    </ion-item>
+  </ion-col>
+  <ion-col>
+    <ion-item>
+      <ion-label>Destination</ion-label>
+      <ion-input type="text" name="destination"></ion-input>
+    </ion-item>
+  </ion-col>
+</ion-row>
+
+<ion-row>
+  <ion-col>
+    <ion-item>
+      <ion-label>Service Level</ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label>Same Day Delivery</ion-label>
+      <ion-checkbox slot="start"></ion-checkbox>
+    </ion-item>
+    <ion-item>
+      <ion-label>Overnight Delivery</ion-label>
+      <ion-checkbox slot="start"></ion-checkbox>
+    </ion-item>
+  </ion-col>
+</ion-row>
+
+<ion-row>
+  <ion-col>
+    <ion-item>
+      <ion-label>Shipment Information</ion-label>
+    </ion-item>
+  </ion-col>
+</ion-row>
+
+<ion-row>
+  <ion-col>
+    <ion-table class="shipment-table">
+      <ion-row>
+        <ion-col>
+          <ion-label>NO OF PACKAGES</ion-label>
+        </ion-col>
+        <ion-col colspan="2">
+          <ion-label>TOTAL ACTUAL WEIGHT</ion-label>
+        </ion-col>
+        <ion-col colspan="3">
+          <ion-label>DIMENSIONAL WEIGHT</ion-label>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+          <ion-input type="text" name="packages"></ion-input>
+        </ion-col>
+        <ion-col>
+          <ion-input type="text" name="actualKilos"></ion-input>
+          <ion-label>Kilos</ion-label>
+        </ion-col>
+        <ion-col>
+          <ion-input type="text" name="actualGrams"></ion-input>
+          <ion-label>Grams</ion-label>
+        </ion-col>
+        <ion-col>
+          <ion-input type="text" name="dimensionalLength"></ion-input>
+          <ion-label>Length</ion-label>
+        </ion-col>
+        <ion-col>
+          <ion-input type="text" name="actualKilos"></ion-input>
+          <ion-label>width</ion-label>
+        </ion-col>
+        <ion-col>
+          <ion-input type="text" name="actualGrams"></ion-input>
+          <ion-label>Height</ion-label>
+        </ion-col></ion-row
+      ></ion-table
+    ></ion-col
+  ></ion-row
+>
