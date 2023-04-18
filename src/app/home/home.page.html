@@ -67,6 +67,11 @@
               <td><ion-input contenteditable>COUNTRY</ion-input></td>
             </tr>
 
+            <tr class="shipment-table">
+              <td><ion-input contenteditable></ion-input></td>
+              <td><ion-input contenteditable></ion-input></td>
+            </tr>
+
             <tr>
               <td colspan="2">
                 <label for="contactPerson">Contact Person:</label>
@@ -125,7 +130,7 @@
         <ion-row>
           <ion-col>
             <ion-item>
-              <ion-label><div class="title">Service Level</div></ion-label>
+              <ion-label> <div class="title">Service Level</div></ion-label>
             </ion-item>
 
             <ion-item>
@@ -230,11 +235,11 @@
             <td><ion-input contenteditable></ion-input></td>
             <td><ion-input contenteditable></ion-input></td>
           </tr>
-          <tr>
-            <td class="DECLARED">
-              DECLARED VALUE FOR CARRIAGE-ADDITIONAL CHARGES APPLIES
-            </td>
-          </tr>
+          <div class="DECLARED">
+            <tr>
+              <td>DECLARED VALUE FOR CARRIAGE-ADDITIONAL CHARGES APPLIES</td>
+            </tr>
+          </div>
           <tr>
             <td>Currency</td>
             <td>Value</td>
@@ -314,21 +319,23 @@
           <h1>WAYBILL</h1>
           <h2>(Non-Negotiable)</h2>
         </div>
-        <table>
-          <tr>
-            <td><div class="title">DELIVERY INFORMATION</div></td>
-          </tr>
-          <tr>
-            <td colspan="2">
-              <span>RECIPIENTS NAME</span><br />
+        <table class="shipment-table">
+          <tr class="shipment-table">
+            <td>
+              <div class="title">DELIVERY INFORMATION</div>
+              <span>RECIPIENTS NAME</span>
               <ion-input contenteditable></ion-input>
             </td>
           </tr>
-          <tr>
-            <td colspan="2">
+          <tr class="shipment-table">
+            <td>
               <span>RECIPIENTS SIGNATURE AND ID NO.</span><br />
               <ion-input contenteditable></ion-input>
             </td>
+          </tr>
+
+          <tr>
+            <td colspan="2"></td>
           </tr>
           <table>
             <tbody>
@@ -343,43 +350,56 @@
                 </td>
               </tr>
             </tbody>
+
+            <tr class="shipment-table">
+              <td>
+                <div class="title">SPECIAL INSTRUCTIONS</div>
+                <ion-input contenteditable></ion-input>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <div class="title">UFANISI COURIER SERVICES USE</div>
+                <tr class="shipment-table">
+                  <td>RECEIVED FOR UFANISI COURIER SERVICES BY</td>
+                  <td>DATE</td>
+                  <td>TIME</td>
+                </tr>
+                <tr class="shipment-table">
+                  <td><ion-input contenteditable></ion-input></td>
+                  <td><ion-input contenteditable></ion-input></td>
+                  <td><ion-input contenteditable></ion-input></td>
+                </tr>
+              </td>
+            </tr>
+          </table>
+          <table class="shipment-table">
+            <tr>
+              <td>RECEIVED FOR UFANISI COURIER SERVICES BY</td>
+              <td>DATE</td>
+              <td>TIME</td>
+            </tr>
+            <tr>
+              <td><ion-input contenteditable></ion-input></td>
+              <td><ion-input contenteditable></ion-input></td>
+              <td><ion-input contenteditable></ion-input></td>
+            </tr>
           </table>
           <tr>
-            <td><div class="title">SPECIAL INSTRUCTIONS</div></td>
-            <td>
-              <ion-input contenteditable></ion-input>
-            </td>
+            <td></td>
           </tr>
-          <tr>
-            <td><div class="title">UFANISI COURIER SERVICES USE</div></td>
-          </tr>
-        </table>
-        <table class="shipment-table">
-          <tr>
-            <td>RECEIVED FOR UFANISI COURIER SERVICES BY</td>
-            <td>DATE</td>
-            <td>TIME</td>
-          </tr>
-          <tr>
-            <td><ion-input contenteditable></ion-input></td>
-            <td><ion-input contenteditable></ion-input></td>
-            <td><ion-input contenteditable></ion-input></td>
-          </tr>
-        </table>
-        <tr>
-          <td></td>
-        </tr>
-        <table class="shipment-table">
-          <tr>
-            <td>AMOUNT RECEIVED</td>
-            <td>INVOICE NO.</td>
-            <td>MPESA CODE</td>
-          </tr>
-          <tr>
-            <td><ion-input contenteditable></ion-input></td>
-            <td><ion-input contenteditable></ion-input></td>
-            <td><ion-input contenteditable></ion-input></td>
-          </tr>
+          <table class="shipment-table">
+            <tr>
+              <td>AMOUNT RECEIVED</td>
+              <td>INVOICE NO.</td>
+              <td>MPESA CODE</td>
+            </tr>
+            <tr>
+              <td><ion-input contenteditable></ion-input></td>
+              <td><ion-input contenteditable></ion-input></td>
+              <td><ion-input contenteditable></ion-input></td>
+            </tr>
+          </table>
         </table>
       </ion-col> </ion-row></ion-grid
 ></ion-content>
